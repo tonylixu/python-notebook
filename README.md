@@ -7,4 +7,15 @@ We'll implement a command line menu interface, from this command line interface,
 ## Class UML
 ![UML Diagram](./uml/uml.png)
 
+## Project Structure
+```bash
+python-notebook:
+    notebook.py
+    menu.py
+    command_option.py
+```
 
+## How to Run
+```bash
+$ pyhton command_option.py
+```
