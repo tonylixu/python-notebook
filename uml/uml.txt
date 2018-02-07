@@ -1,0 +1,1 @@
+[CommandOption] - [Notebook|+notes: list|+search(filter:str): list; +new_note(memo tags=''); +modify_memo(note_id memo); +modify_tags(note_id tags)], [Menu] - [Notebook], [Notebook] 1-* [Note|+memo; +creation_date; +tags|+match(search_filter: str): boolean]
