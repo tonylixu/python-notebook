@@ -21,11 +21,34 @@ class Notebook:
         note = Note(memo, tags)
         self.notes.append(note)
 
-    def modify_memo(self):
-        pass
+    def modify_memo(self, note_id, memo):
+        '''
+        Find the note with the given id and change its
+        memo to the given value.
 
-    def modify_tags(self):
-        pass
+        :param note_id: Integer, note id
+        :param memo: Memo in string format
+        :return None
+        '''
+        for note in self.notes:
+            if note.id == note_id:
+                note.memo = memo
+                break
 
-    def search(self):
-        pass
+    def modify_tags(self, note_id, tags):
+        '''
+        Find the note with the given id and change its
+        tags to the given value.
+
+        :param note_id: Integer, note id
+        :param tags: Tags in string format
+        :return None
+        '''
+        for note in self.notes:
+            if note.id == note_id:
+                note.tags = tags
+                break
+
+    def search(self, filter):
+        '''
+        '''
