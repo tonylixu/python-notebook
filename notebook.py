@@ -51,4 +51,6 @@ class Notebook:
 
     def search(self, filter):
         '''
+        Find all notes that contains the given filter
         '''
+        return [note for note in self.notes if note.match(filter)]
