@@ -14,3 +14,13 @@ class Menu:
             "4": self.modify_note,
             "5": self.quit
         }
+
+    def display_menu(self):
+        print('''
+        1. Show all notes
+        2. Search notes
+        3. Add note
+        4. Modify note
+        5. Quit
+        ''')
+
