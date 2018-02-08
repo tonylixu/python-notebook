@@ -45,3 +45,11 @@ class Menu:
             notes = self.notebook.notes
         for note in notes:
             print("{0}: {1}\n{2}".format(note.id, note.tags, note.memo))
+
+    def search_notes(self):
+        '''
+        Search notes that contains a given string
+        '''
+        filter = input("Search for: ")
+        notes = self.notebook.search(filter)
+        self.show_notes(notes)
