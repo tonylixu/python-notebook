@@ -1,5 +1,6 @@
 from notebook import Notebook
 from note import Note
+import sys
 
 class Menu:
     '''
@@ -70,3 +71,10 @@ class Menu:
             self.notebook.modify_memo(note_id, memo)
         if tags:
             self.notebook.modify_tags(note_id, tags)
+
+    def quit(self):
+        print("Thanks for using notebook today")
+        sys.exit(0)
+
+if __name__ == '__main__':
+    Menu().run()
