@@ -24,3 +24,16 @@ class Menu:
         5. Quit
         ''')
 
+    def run(self):
+        '''
+        Display the menu and respond to choices.
+        '''
+        while True:
+            self.display_menu()
+            choice = input("Enter an option: ")
+            action = self.choices.get(str(choice))
+            if action:
+                action()
+            else:
+                print("{0} is not a valid choice".format(choice))
+
