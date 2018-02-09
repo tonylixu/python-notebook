@@ -31,7 +31,7 @@ class Notebook:
         :return None
         '''
         for note in self.notes:
-            if note.id == note_id:
+            if note.id == int(note_id):
                 note.memo = memo
                 break
 
@@ -45,7 +45,7 @@ class Notebook:
         :return None
         '''
         for note in self.notes:
-            if note.id == note_id:
+            if note.id == int(note_id):
                 note.tags = tags
                 break
 

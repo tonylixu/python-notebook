@@ -45,7 +45,7 @@ class Menu:
         if not notes:
             notes = self.notebook.notes
         for note in notes:
-            print("{0}: {1}\n{2}".format(note.id, note.tags, note.memo))
+            print("Note {0}: Tags:{1}\nMemo: {2}".format(note.id, note.tags, note.memo))
 
     def search_notes(self):
         '''
@@ -65,7 +65,7 @@ class Menu:
 
     def modify_note(self):
         note_id = input("Enter a note id: ")
-        memo = input("Enter a memo")
+        memo = input("Enter a memo: ")
         tags = input("Enter tags: ")
         if memo:
             self.notebook.modify_memo(note_id, memo)
