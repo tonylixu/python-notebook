@@ -20,6 +20,14 @@ class Notebook:
         '''
         note = Note(memo, tags)
         self.notes.append(note)
+    
+    def find_note(self, note_id):
+        '''
+        Find note by given note_id.
+
+        :param note_id: Note ID in string format
+        :return note object
+        '''
 
     def modify_memo(self, note_id, memo):
         '''
