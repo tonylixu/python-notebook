@@ -1,4 +1,4 @@
-# python-notebook
+git pull# python-notebook
 A notebook to store notes(short memos). Each note can have tags added for easy querying and a search function. 
 
 ## Project Design
