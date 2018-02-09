@@ -28,6 +28,9 @@ class Notebook:
         :param note_id: Note ID in string format
         :return note object
         '''
+        for note in self.notes:
+            if note.id == int(note_id):
+                return note
 
     def modify_memo(self, note_id, memo):
         '''
