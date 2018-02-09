@@ -41,10 +41,8 @@ class Notebook:
         :param memo: Memo in string format
         :return None
         '''
-        for note in self.notes:
-            if note.id == int(note_id):
-                note.memo = memo
-                break
+        note = self.find_note(note_id)
+        note.memo = memo
 
     def modify_tags(self, note_id, tags):
         '''
@@ -55,10 +53,8 @@ class Notebook:
         :param tags: Tags in string format
         :return None
         '''
-        for note in self.notes:
-            if note.id == int(note_id):
-                note.tags = tags
-                break
+        note = self.find_note(note_id)
+        note.tags = tags
 
     def search(self, filter):
         '''
